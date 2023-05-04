@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage">
+
+    <Button
+        android:id="@+id/qr_move"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="294dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="161dp"
+        app:layout_constraintBottom_toTopOf="@+id/infor_move"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/mypage_move"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toEndOf="@+id/infor_move"
+        app:layout_constraintTop_toBottomOf="@+id/qr_move"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/infor_move"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="76dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mypage_move"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qr_move" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mainpage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
